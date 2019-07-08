@@ -1,4 +1,4 @@
-## LeetCode 个人练习
+# LeetCode 个人练习
 
 - struct
 - algorithm

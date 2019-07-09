@@ -23,6 +23,6 @@
 
 ## 题目
 
-| 英文题目              | 中文题目                                                                                              |
-| --------------------- | ----------------------------------------------------------------------------------------------------- |
-| longest-common-prefix | [最长公共前缀](https://github.com/whiteCcinn/leetcode-practice/blob/master/algorithm/最长公共前缀.md) |
+| 英文题目              | 中文题目                                                                                            |
+| --------------------- | --------------------------------------------------------------------------------------------------- |
+| longest-common-prefix | [最长公共前缀](https://github.com/whiteCcinn/leetcode-practice/blob/master/subject/最长公共前缀.md) |

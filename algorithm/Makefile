@@ -33,3 +33,9 @@ invertTree:
 lcp-1:
 	gcc -std=c99 lcp-1.c -o lcp-1
 	@printf '%b %b\n' $(MAKECOLOR)[build complete...]$(ENDCOLOR)
+
+.PHONY: isUnivalTree
+
+isUnivalTree:
+	gcc -std=c99 -lbst -L. -I../struct/c/bst isUnivalTree.c -o isUnivalTree
+	@printf '%b %b\n' $(MAKECOLOR)[build complete...]$(ENDCOLOR)

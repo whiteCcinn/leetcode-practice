@@ -186,11 +186,6 @@ void lRUCachePut(LRUCache *obj, int key, int value)
       }
       else if (removeEntry == obj->linkTail)
       {
-        if (removeEntry->linkPrev->value == 0)
-        {
-          printf("333\n");
-        }
-        // printf("value:%d\n", removeEntry->linkPrev->value);
         // 删除尾节点
         obj->linkTail = removeEntry->linkPrev;
         obj->linkTail->linkNext = NULL;

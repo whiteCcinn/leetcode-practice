@@ -11,22 +11,19 @@ int min(int value1, int value2)
 
 int coinChange(int *coins, int coinsSize, int amount)
 {
-  int maxSize = amount + 1;
-  int dp[maxSize];
+  int dp[amount + 1];
   dp[0] = 0;
-  int coin;
-  for (int c = 1; c < maxSize; c++)
+  for (int c = 1; c < amount + 1; c++)
   {
-    dp[c] = maxSize;
+    dp[c] = amount + 1;
   }
   for (int i = 1; i <= amount; i++)
   {
-    for (int ii = 0; ii < coinsSize; ii++)
+    for (int j = 0; j < coinsSize; j++)
     {
-      coin = coins[ii];
-      if (coin <= i)
+      if (coins[j] <= i)
       {
-        dp[i] = min(dp[i], dp[i - coin] + 1);
+        dp[i] = min(dp[i], dp[i - coins[j]] + 1);
       }
     }
   }

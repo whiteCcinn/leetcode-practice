@@ -39,3 +39,9 @@ lcp-1:
 isUnivalTree:
 	gcc -std=c99 -lbst -L. -I../struct/c/bst isUnivalTree.c -o isUnivalTree
 	@printf '%b %b\n' $(MAKECOLOR)[build complete...]$(ENDCOLOR)
+
+	.PHONY: isUnivalTree
+
+coinChange:
+	gcc -std=c99 coinChange.c -o coinChange
+	@printf '%b %b\n' $(MAKECOLOR)[build complete...]$(ENDCOLOR)

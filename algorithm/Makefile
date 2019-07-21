@@ -40,8 +40,14 @@ isUnivalTree:
 	gcc -std=c99 -lbst -L. -I../struct/c/bst isUnivalTree.c -o isUnivalTree
 	@printf '%b %b\n' $(MAKECOLOR)[build complete...]$(ENDCOLOR)
 
-	.PHONY: isUnivalTree
+.PHONY: coinChange
 
 coinChange:
 	gcc -std=c99 coinChange.c -o coinChange
+	@printf '%b %b\n' $(MAKECOLOR)[build complete...]$(ENDCOLOR)
+
+.PHONY: LRU
+
+LRU:
+	gcc -std=c99 LRU.c -o LRU
 	@printf '%b %b\n' $(MAKECOLOR)[build complete...]$(ENDCOLOR)

@@ -9,7 +9,7 @@ BINCOLOR="\033[37;1m"
 MAKECOLOR="\033[32;1m"
 ENDCOLOR="\033[0m"
 
-AL=invertTree lcp-1
+AL=invertTree lcp-1 coinChange LRU isUnivalTree
 
 .PHONY: help
 help:
